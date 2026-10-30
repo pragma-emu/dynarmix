@@ -19,8 +19,8 @@ INST(thumb32_LDRD_lit_1,     "LDRD (lit)",               "11101000U1111111ttttss
 INST(thumb32_LDRD_lit_2,     "LDRD (lit)",               "11101001U1W11111ttttssssiiiiiiii")
 INST(thumb32_LDRD_imm_1,     "LDRD (imm)",               "11101000U111nnnnttttssssiiiiiiii")
 INST(thumb32_LDRD_imm_2,     "LDRD (imm)",               "11101001U1W1nnnnttttssssiiiiiiii")
-INST(thumb32_STL,            "STL",                      "111010001100nnnntttt111110101111") // v8
-INST(thumb32_LDA,            "LDA",                      "111010001101nnnntttt111110101111") // v8
+INST(thumb32_STL,            "STL",                      "111010001100nnnntttt111110101111") 
+INST(thumb32_LDA,            "LDA",                      "111010001101nnnntttt111110101111") 
 INST(thumb32_STREXB,         "STREXB",                   "111010001100nnnntttt11110100dddd")
 INST(thumb32_STREXH,         "STREXH",                   "111010001100nnnntttt11110101dddd")
 INST(thumb32_STREXD,         "STREXD",                   "111010001100nnnnttttuuuu0111dddd")
@@ -112,11 +112,11 @@ INST(thumb32_BXJ,            "BXJ",                      "111100111100mmmm100011
 INST(thumb32_MRS_reg,        "MRS (reg)",                "11110011111R11111000dddd00000000")
 //INST(thumb32_HVC,            "HVC",                      "111101111110----1000------------")
 //INST(thumb32_SMC,            "SMC",                      "111101111111----1000000000000000")
-INST(thumb32_UDF,            "UDF",                      "111101111111----1010------------") // v6T2
+INST(thumb32_UDF,            "UDF",                      "111101111111----1010------------")
 
 // Branch instructions
-INST(thumb32_BL_imm,         "BL (imm)",                 "11110Svvvvvvvvvv11j1jvvvvvvvvvvv") // v4T
-INST(thumb32_BLX_imm,        "BLX (imm)",                "11110Svvvvvvvvvv11j0jvvvvvvvvvvv") // v5T
+INST(thumb32_BL_imm,         "BL (imm)",                 "11110Svvvvvvvvvv11j1jvvvvvvvvvvv")
+INST(thumb32_BLX_imm,        "BLX (imm)",                "11110Svvvvvvvvvv11j0jvvvvvvvvvvv")
 INST(thumb32_B,              "B",                        "11110Svvvvvvvvvv10j1jvvvvvvvvvvv")
 INST(thumb32_UDF,            "Invalid decoding",         "11110-111-------10-0------------")
 INST(thumb32_B_cond,         "B (cond)",                 "11110Sccccvvvvvv10i0ivvvvvvvvvvv")
